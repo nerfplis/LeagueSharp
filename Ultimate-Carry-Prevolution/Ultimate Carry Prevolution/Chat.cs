@@ -9,15 +9,15 @@ namespace Ultimate_Carry_Prevolution
 	{
 		public static void WellCome()
 		{
-			if (FlamerProtection())
-			{
-				Game.PrintChat("We not like your Behavier in LoL, Change it or your name get Permanent Banned, UCP-Disabled");
-				return;
-			}
+			//if (FlamerProtection())
+			//{
+			//	Game.PrintChat("We not like your Behavier in LoL, Change it or your name get Permanent Banned, UCP-Disabled");
+			//	return;
+			//}
 			Game.PrintChat(
 				"<font color ='{0}'>Ultimate</font> <font color ='{1}'>Carry</font> <font color ='{1}'>Prevolution</font>",
 				HtmlColor.Cyan, HtmlColor.Cyan);
-			Game.PrintChat("<font color ='{0}'>By xSalice & Lexxes </font>", HtmlColor.Gold);
+			//Game.PrintChat("<font color ='{0}'>By Penis </font>", HtmlColor.Gold);
 			Game.PrintChat(
 				"<font color ='{0}'>Version </font> <font color ='{1}'>1.0." + Loader.VersionNumber +
 				"</font> <font color ='{0}'>Loading</font>",
@@ -36,14 +36,14 @@ namespace Ultimate_Carry_Prevolution
 					HtmlColor.Cyan);
 		}
 
-		private static bool FlamerProtection()
-		{
+		//private static bool FlamerProtection()
+		//{
 			// A list of IngameNames ( i dont know if they use L# or not ) but i think so and if they do, they not have to use UCP
 			// till they changed the behavier.
 			//if (ObjectManager.Player.Name == "Zourimi") // 13.11 ( 7 day banned )
 			//	return true;
-			return false;
-		}
+		//	return false;
+		//}
 
 		private static bool IsChampionSupported()
 		{

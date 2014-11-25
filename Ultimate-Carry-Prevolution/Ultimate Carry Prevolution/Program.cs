@@ -27,7 +27,7 @@ namespace Ultimate_Carry_Prevolution
 			_xSprite = new Sprite(Drawing.Direct3DDevice);
 			_xTexture = Texture.FromMemory(
 		   Drawing.Direct3DDevice,
-		   (byte[])new ImageConverter().ConvertTo(GetImageFromUrl("http://goo.gl/ElubcM"), typeof(byte[])), 266, 38, 0,
+           (byte[])new ImageConverter().ConvertTo(GetImageFromUrl("http://i.imgur.com/be9lJsL.jpg"), typeof(byte[])), 266, 38, 0,
 		   Usage.None, Format.A1, Pool.Managed, Filter.Default, Filter.Default, 0);
 			
 			Game.OnWndProc += Game_OnWndProc;
@@ -44,7 +44,7 @@ namespace Ultimate_Carry_Prevolution
 			if((args.Msg == (uint)WindowsMessages.WM_KEYUP || args.Msg == (uint)WindowsMessages.WM_KEYDOWN) && args.WParam == 32 && !_donateclicked)
 			{
 				_donateclicked = true;
-				Process.Start("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SHPHSQ2LNX8BE");
+				Process.Start("https://www.google.de/");
 			}
 		}
 		private static Image GetImageFromUrl(string url)
@@ -79,35 +79,35 @@ namespace Ultimate_Carry_Prevolution
 			Drawing.DrawText(10, 30, Color.White, "Codet and Developed by");
 			Drawing.DrawText(10, 50, Color.White, "Lexxes & xSalice");
 
-			Drawing.DrawText(10, 100, Color.White, "How Much time Loded?");
+			//Drawing.DrawText(10, 100, Color.White, "How Much time Loded?");
 
-			_xSprite.Begin();
-			_xSprite.Draw(_xTexture, new ColorBGRA(255, 255, 255, 255), null, null, new Vector3(10, 120, 0));
-			_xSprite.End();
+            //_xSprite.Begin();
+            //_xSprite.Draw(_xTexture, new ColorBGRA(255, 255, 255, 255), null, null, new Vector3(10, 120, 0));
+            //_xSprite.End();
 
-			Drawing.DrawText(10, 200, Color.White, "Current Donation State : 23E");
-			Drawing.DrawText(10, 220, Color.White, "Next Goal :              60E");
-			Drawing.DrawText(10, 250, Color.White, "Reason: xSalice got Banned and need");
-			Drawing.DrawText(10, 270, Color.White, "new Account, lvl 30 all champions");
+            //Drawing.DrawText(10, 200, Color.White, "Current Donation State : 23E");
+            //Drawing.DrawText(10, 220, Color.White, "Next Goal :              60E");
+            //Drawing.DrawText(10, 250, Color.White, "Reason: xSalice got Banned and need");
+            //Drawing.DrawText(10, 270, Color.White, "new Account, lvl 30 all champions");
 
-			Drawing.DrawText(10, 300, Color.White, "Total Amount of Donation : 23E");
+            //Drawing.DrawText(10, 300, Color.White, "Total Amount of Donation : 23E");
 
-			Drawing.DrawText(10, 340, Color.White, "Paypal : team-xslx@hotmail.com");
-			Drawing.DrawText(10, 360, Color.White, "Forum: xSLx Signatur - Donate");
+            //Drawing.DrawText(10, 340, Color.White, "Paypal : team-xslx@hotmail.com");
+            //Drawing.DrawText(10, 360, Color.White, "Forum: xSLx Signatur - Donate");
 
-			Drawing.DrawText(10, 400, Color.White, "or just click > Space < in Loadscreen");
+            //Drawing.DrawText(10, 400, Color.White, "or just click > Space < in Loadscreen");
 
-			Drawing.DrawText(10, 430, Color.White, "Top 10 Donators ");
-			Drawing.DrawText(10, 460, Color.White, "E2Slayer     8E");
-			Drawing.DrawText(10, 480, Color.White, "mtsdenis     5E");
-			Drawing.DrawText(10, 500, Color.White, "Luca Lilly   5E");
-			Drawing.DrawText(10, 520, Color.White, "Xionlunix    5E");
-			Drawing.DrawText(10, 540, Color.White, "   ...   ");
-			Drawing.DrawText(10, 560, Color.White, "   ...   ");
-			Drawing.DrawText(10, 580, Color.White, "   ...   ");
-			Drawing.DrawText(10, 600, Color.White, "   ...   ");
-			Drawing.DrawText(10, 620, Color.White, "   ...   ");
-			Drawing.DrawText(10, 640, Color.White, "(denis pls tell us your forumname)");
+            //Drawing.DrawText(10, 430, Color.White, "Top 10 Donators ");
+            //Drawing.DrawText(10, 460, Color.White, "E2Slayer     8E");
+            //Drawing.DrawText(10, 480, Color.White, "mtsdenis     5E");
+            //Drawing.DrawText(10, 500, Color.White, "Luca Lilly   5E");
+            //Drawing.DrawText(10, 520, Color.White, "Xionlunix    5E");
+            //Drawing.DrawText(10, 540, Color.White, "   ...   ");
+            //Drawing.DrawText(10, 560, Color.White, "   ...   ");
+            //Drawing.DrawText(10, 580, Color.White, "   ...   ");
+            //Drawing.DrawText(10, 600, Color.White, "   ...   ");
+            //Drawing.DrawText(10, 620, Color.White, "   ...   ");
+            //Drawing.DrawText(10, 640, Color.White, "(denis pls tell us your forumname)");
 		}
 
 		private static void OnGameStart(EventArgs args)
