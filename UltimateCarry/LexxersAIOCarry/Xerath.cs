@@ -22,7 +22,7 @@ namespace UltimateCarry
 			Drawing.OnDraw += Drawing_OnDraw;
 			Game.OnGameUpdate += Game_OnGameUpdate;
 			Game.OnGameSendPacket += Game_OnGameSendPacket2;
-			Interrupter.OnPosibleToInterrupt += Interrupter_OnPosibleToInterrupt;
+			//Interrupter.OnPosibleToInterrupt += Interrupter_OnPosibleToInterrupt;
 			PluginLoaded();
 		}
 
